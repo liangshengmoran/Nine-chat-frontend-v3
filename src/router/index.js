@@ -17,6 +17,11 @@ const routes = [
 		component: () => import('@/views/register.vue'),
 	},
 	{
+		path: '/oauth/callback',
+		name: 'OAuthCallback',
+		component: () => import('@/views/oauth-callback.vue'),
+	},
+	{
 		path: '/:pathMatch(.*)*',
 		redirect: '/',
 	},
